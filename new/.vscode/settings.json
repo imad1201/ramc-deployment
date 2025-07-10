@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/c6e9d317-68dd-4d17-9249-4d7c6eec5d44/resourceGroups/RAMC-RG/providers/Microsoft.Web/sites/ramc-mvp-dev",
+    "appService.deploySubpath": "."
+}
