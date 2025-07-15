@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2015", // Ensures modern JavaScript features are available like Promise
+    "module": "commonjs", // Ensures compatibility with Node.js
+    "moduleResolution": "node", // Resolves modules as Node.js would
+    "lib": ["es2015", "dom"], // Includes libraries for working with promises and browser APIs
+    "strict": true, // Enables strict mode for better type checking
+    "esModuleInterop": true, // Ensures proper interop with non-ES module imports
+    "skipLibCheck": true, // Skips type checking of declaration files for faster builds
+    "forceConsistentCasingInFileNames": true, // Ensures file names are consistent in casing
+    "resolveJsonModule": true, // Allows importing JSON modules
+    "outDir": "./dist", // Specifies the output directory for compiled files
+    "baseUrl": "./", // Specifies the base directory for module resolution
+    "paths": {
+      "@entities/*": ["src/entities/*"],
+      "@services/*": ["src/services/*"],
+      "@controllers/*": ["src/controllers/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts" // Includes all TypeScript files in the src directory
+  ],
+  "exclude": [
+    "node_modules" // Excludes node_modules from compilation
+  ]
+}

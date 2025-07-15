@@ -1,0 +1,48 @@
+PORT=5000
+DB_HOST=ramc-erptest.mysql.database.azure.com
+DB_USER=root
+DB_PASSWORD=Micha@201
+DB_NAME=ramc_erp
+JWT_SECRET=Amro@29032020Roudi@1949
+
+
+{
+  "name": "Imad Eddine",
+  "email": "imad@royalmro.com",
+  "password": "Micha@201",
+  "role_id": 1
+}
+
+
+
+{
+  "emp_no": "EMP001",
+  "name": "Imad Eddine",
+  "dob": "1981-09-13",
+  "passport_no": "LR3146490",
+  "visa_expiry": "2026-05-10",
+  "designation": "CEO",
+  "department_id": 1,
+  "join_date": "2021-07-01",
+  "salary": 12000.00
+}
+
+
+@Module({
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: 'localhost', 
+      port: 3306,
+      username: 'imad',
+      password: 'Micha@201',
+      database: 'ramc_erp',
+      autoLoadEntities: true,
+      synchronize: true,
+    }),
+  ],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}
+
