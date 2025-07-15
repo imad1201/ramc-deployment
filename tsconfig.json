@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                           // Use ES2022 as the target version for compiled code
+    "module": "CommonJS",                         // Use CommonJS modules for Node.js compatibility
+    "outDir": "./dist",                           // Output directory for compiled files (JavaScript files)
+    "rootDir": "./src",                           // Root directory for TypeScript source files
+    "strict": true,                               // Enable all strict type-checking options
+    "esModuleInterop": true,                      // Allow importing CommonJS modules using ES6 import syntax
+    "skipLibCheck": true,                         // Skip type checking of declaration files (.d.ts) for faster compilation
+    "forceConsistentCasingInFileNames": true,     // Ensure consistent file naming (case-sensitive)
+    "incremental": true,                          // Enable incremental compilation to improve build time
+    "composite": true,                            // Enable project references (improves performance and organization)
+    "moduleResolution": "node",                   // Use Node.js module resolution strategy
+    "removeComments": true,                       // Remove comments from the compiled output
+    "sourceMap": true,                            // Generate source maps to enable debugging of TypeScript code
+    "noUnusedLocals": true,                       // Report errors for unused local variables
+    "noUnusedParameters": true                    // Report errors for unused parameters
+  },
+  "include": [
+    "src/**/*"                                    // Include all TypeScript files inside the 'src' directory
+  ],
+  "exclude": [
+    "node_modules",                               // Exclude 'node_modules' directory
+    "dist"                                        // Exclude 'dist' directory where compiled JavaScript is placed
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "ramc-erp",
+  "version": "0.0.1",
+  "description": "RAMC ERP system",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node dist/main.js"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "cts",
+      "mts"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.tsx?$",
+    "coverageDirectory": "coverage",
+    "collectCoverage": true,
+    "verbose": true
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.2",
+    "typescript": "^5.4.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.4",
+    "nodemon": "^3.1.10",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.4.0",
+    "@types/jest": "^30.0.0",
+    "@jest/globals": "^30.0.0"
+  }
+}

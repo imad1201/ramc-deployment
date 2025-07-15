@@ -1,0 +1,6 @@
+const button = document.getElementById('button');
+const handleClick = () => console.log('Button clicked!');
+button.addEventListener('click', handleClick);
+
+// Remove event listener when no longer needed
+button.removeEventListener('click', handleClick);
