@@ -1,9 +1,11 @@
 # compiled output
 /dist
-/node_modules
 /build
 
-# Logs
+# dependencies
+/node_modules
+
+# logs
 logs
 *.log
 npm-debug.log*
@@ -12,10 +14,11 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# OS
+# OS files
 .DS_Store
+Thumbs.db
 
-# Tests
+# tests
 /coverage
 /.nyc_output
 
@@ -24,11 +27,11 @@ lerna-debug.log*
 .project
 .classpath
 .c9/
-*.launch
-.settings/
-*.sublime-workspace
+/*.launch
+/.settings/
+/*.sublime-workspace
 
-# IDE - VSCode
+# VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -42,15 +45,31 @@ lerna-debug.log*
 .env.production.local
 .env.local
 
-# temp directory
+# temp directories
 .temp
 .tmp
 
-# Runtime data
+# runtime data
 pids
 *.pid
 *.seed
 *.pid.lock
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
+# diagnostic reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# -----------------------------------------------------------------------------
+# HRMS – ignore oversized source files that you’ll keep locally or replace
+# -----------------------------------------------------------------------------
+# Individual files:
+src/hrms/leave/leave.service.ts
+src/hrms/leave-request/leave-request.controller.ts
+src/hrms/attendance/attendance.controller.ts
+src/hrms/leave/leave.controller.ts
+src/hrms/payroll/payroll.controller.ts
+src/hrms/performance-appraisal/performance-appraisal.controller.ts
+src/hrms/performance-appraisal/performance-appraisal.service.ts
+
+# Or, to ignore all controllers & services under hrms:
+# src/hrms/**/*.controller.ts
+# src/hrms/**/*.service.ts
