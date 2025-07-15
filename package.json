@@ -8,7 +8,8 @@
     "dev": "npx nodemon --exec \"npx ts-node src/app.ts\"",
     "build": "npx tsc",
     "start:prod": "node dist/app.js",
-    "test": "npx jest --coverage --runInBand --detectOpenHandles --testTimeout=30000",
+    "test": "npx jest --runInBand --detectOpenHandles --testTimeout=30000",
+    "test:coverage": "npx jest --coverage --runInBand --detectOpenHandles --testTimeout=30000",
     "test:watch": "npx jest --watchAll"
   },
   "dependencies": {
@@ -16,10 +17,9 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mysql2": "^3.14.2",
+    "mysql2": "^3.1.0",
     "semver": "^7.7.2",
-    "simple-update-notifier": "^2.0.0",
-    "typeorm": "^0.3.25"
+    "simple-update-notifier": "^2.0.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
